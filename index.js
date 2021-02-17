@@ -17,6 +17,13 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 18;
+if(votingAge < 18){
+  console.log("You can't vote")
+}
+else{
+  console.log("Vote for your favorite candidate")
+}
 
 
 
@@ -151,8 +158,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(km){
+    let miles = km/1.609344;
+    return miles;
   }
 
 
@@ -165,8 +173,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    let result = cm/30.48;
+    return result;
   }
  
 
@@ -201,8 +210,18 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if(score >= 90){
+    return 'you got an A';
+  } else if(score < 90 || score >= 80){
+    return 'you got a B';
+  } else if(score < 80 || score >= 70){
+    return 'you got a C';
+  } else if(score < 70 || score >= 60){
+    return 'you got a D';
+  } else {
+    return 'you got an F'
+  }
   }
   
   
